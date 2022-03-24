@@ -1,0 +1,132 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.pimg1, .pimg2, .pimg3{
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.pimg1{
+    background-image: url("image1.jpg");
+    min-height: 100%;
+}
+.pimg2{
+    background-image: url("image2.jpg");
+    min-height: 400px;
+}
+.pimg3{
+    background-image: url("image3.jpg");
+    min-height: 400px;
+}
+
+#myPic{
+    float: left;
+    margin: 20px 15px 0 0;
+}
+.aboutMe{
+    text-align: left;
+}
+#container{
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.ptext .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+.ptext .border .trans{
+    background-color: transparent;
+}
+
+.skillDivs{
+    display: flex;
+    align-items: center;
+}
+.skillDiv1, .skillDiv2{
+    flex: 1;
+    text-align: center;
+    
+}
+.label-skill{
+    margin-right: 15px;
+}
+
+.containerEmail{
+    max-width: 400px;
+    border: 2px solid #666;
+    padding: 20px 50px;
+    margin: 10px auto;
+}
+.containerEmail label{
+    line-height: 2.3em;
+}
+.input-field{
+    width: 100%;
+}
+.btn{
+    padding: 3px 7px; 
+    letter-spacing: 0.1em;
+}
+.btn:hover{
+    cursor: pointer;
+    color: cornflowerblue;
+}
+.tel{
+    max-width: 400px;
+    border: 2px solid #666;
+    margin: 10px auto;
+    padding: 20px 50px;
+}
+.tel a{
+    text-decoration: none;
+    color: #ddd;
+}
+.tel a:hover{
+    color: cornflowerblue;
+}
+@media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
+    #container{
+        flex-direction: column;
+    }
+    .skillDivs{
+        flex-direction: column;
+    }
+}

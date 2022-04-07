@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website_Sooyeon</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/b6995e0f72.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="pimg1">
+      <div class="ptext">
+        <span class="border"> Hi, I'm Sooyeon! </span>
+      </div>
+    </div>
+    <section class="section section-light">
+      <h2>About Me</h2>
+      <div id="container">
+        <img src="me.jpg" width="230px" height="300px" alt="picture of myself" id="myPic"/>
+        <pre class="aboutMe">
+            Name: Sooyeon Jang
+            Born: 16th June 1997
+            Favoriteꜜ
+             Color: Navy
+             Food: Sandwich
+             Musician: Green Day
+            MBTI: INFP
+            Career Objective: Frontend Developer
+        </pre>
+      </div>
+    </section>
+
+    <div class="pimg4">
+      <div class="ptext">
+        <span class="border trans"> My Interests </span>
+      </div>
+    </div>
+    <section class="section section-light">
+      <div class="interestDivs">
+        <div class="interestDiv1">
+          <figure>
+            <img src="int1.JPG" width="260px" height="310px" alt="picture of my dog" class="int">
+            <figcaption class="cap">
+              CUTE PUPPY
+            </figcaption>
+          </figure>
+        </div>
+        <div class="interestDiv2">
+          <figure>
+            <img src="int2.jpg" width="260px" height="310px" alt="picture of bass" class="int">
+            <figcaption class="cap">
+              PLAYING BASS
+            </figcaption>
+          </figure>
+        </div>
+        <div class="interestDiv3">
+          <figure>
+            <img src="int3.jpeg" width="260px" height="310px" alt="picture of liverpool fc" class="int">
+            <figcaption class="cap">
+              WATCHING FOOTBALL
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+
+    </section>
+
+    <div class="pimg2">
+      <div class="ptext">
+        <span class="border trans"> My Skills </span>
+      </div>
+    </div>
+    <section class="section section-dark">
+        <div class="skillDivs">
+            <div class="skillDiv1">
+                <h2>Education</h2>
+                <p>Bachelor of Arts in Korean Language and Literature,<br>Double major in International Trade and Policy</p>
+            </div>
+            <div class="skillDiv2">
+                <h2>Web Development</h2>
+                <div class="skillP">
+                    <p>
+                        <label for="html" class="label-skill">HTML</label>
+                        <progress id="html" max="100" value="80"></progress>
+                    </p>
+                    <p>
+                        <label for="css" class="label-skill">CSS</label>
+                        <progress id="css" max="100" value="55"></progress>
+                    </p>
+                    <p>
+                        <label for="js" class="label-skill">JS</label>
+                        <progress id="js" max="100" value="40"></progress>
+                    </p>
+                    <p>
+                        <label for="sql" class="label-skill">SQL</label>
+                        <progress id="sql" max="100" value="60"></progress>
+                    </p>
+                </div>
+         </div>
+        </div> 
+    </section>
+
+    <div class="pimg3">
+      <div class="ptext">
+        <span class="border trans"> Contact Me </span>
+      </div>
+    </div>
+    <section class="section section-dark">
+      <h2>Send me a message <i class="fa-solid fa-envelope-open-text"></i></h2>
+      <div class="containerEmail">
+          <div class="emailForm">
+          <form action="https://formspree.io/f/mlezlyyj" method="POST">
+            <div class="form-control">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="firstname" placeholder="First Name" class="input-field">
+                <input type="text" name="lastname" placeholder="Last Name" class="input-field">
+            </div>
+            <div class="form-control">
+                <label for="email">Your Email*</label>
+                <input type="email" id="email" name="email" placeholder="e.g. hello@gmail.com" class="input-field" required>
+            </div>
+            <div class="form-control">
+                <label for="message">Message</label>
+                <textarea id="message" class="input-field" name="message" cols="40" rows="8" placeholder="Enter your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn">send</button>
+          </form>     
+         </div>
+      </div>
+      <br>
+      <h2>Social Media</h2>
+      <div class="tel">
+        <ul class="list">
+          <li><a href="tel:+821034325345"><i class="fa-solid fa-square-phone fa-3x"></i></a></li>
+          <li><a href="https://www.facebook.com/ReyJang97" target="_blank"><i class="fa-brands fa-facebook-square fa-3x"></i></a></li>
+          <li><a href="https://github.com/reyJang97" target="_blank"><i class="fa-brands fa-github-square fa-3x"></i></a></li>
+        </ul>
+     </div>
+    </section>
+
+    <div class="pimg1">
+      <div class="ptext">
+        <span class="border"> Thank You! </span>
+      </div>
+    </div>
+
+    <button id="myBtn" title="Go to top" onclick="topFunction()">Top</button>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
